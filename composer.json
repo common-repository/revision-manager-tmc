@@ -1,0 +1,40 @@
+{
+    "name" :              "tmc/revisionmanager",
+    "description" :       "Clone your post, page or custom post type to a draft. Draft up revisions of live, published content.",
+    "minimum-stability" : "stable",
+    "license" :           "proprietary",
+    "authors" :           [
+        {
+            "name" :  "Jakub Kuranda",
+            "email" : "jakubkuranda@gmail.com"
+        }
+    ],
+    "repositories" :      [
+        {
+            "type" : "vcs",
+            "url" :  "https://github.com/TheMasterCut/ShellPress"
+        }
+    ],
+    "require" :           {
+        "php" :            ">=7.1",
+        "tmc/shellpress" : "dev-master",
+        "ext-json" :       "*"
+    },
+    "autoload" :          {
+        "psr-4" : {
+            "tmc\\revisionmanager\\" : ""
+        }
+    },
+    "config" : {
+        "secure-http" : false,
+        "discard-changes": true
+    },
+    "archive": {
+        "exclude": [
+            "!vendor/*",
+            "**/node_modules",
+            "**/.*",
+            "**/*.zip"
+        ]
+    }
+}
